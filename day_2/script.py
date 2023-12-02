@@ -54,6 +54,7 @@ def get_max_per_color(parsed_game):
     for color in BAG_MIN_PER_COLOR:
         max_values = max(set_values.get(color, 0) for set_values in parsed_game.values())
         power *= max_values
+
     return power
 
 
